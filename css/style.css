@@ -49,6 +49,9 @@ button.bot-white {
   border: 1px solid #2658C8;
   border-radius: 5px;
 }
+button {
+  cursor: pointer;
+}
 /*ESTILOS HEADER*/
 header {
   display: flex;
