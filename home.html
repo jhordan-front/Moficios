@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/507b78cca7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header>
+		<div class="contenedor">
+			<a href="#">
+			<img src="img/logo_moficio.svg" alt="">
+			</a>
+			<div class="register-or-login">
+				<div class="login"><p>Registrate o<strong> ingresa</strong></p></div>
+				<button class="oficio">Ofrece tu oficio</button>
+			</div>
+		</div>
+	</header>
+	<section class="map-home">
+		<div class="map-home-item">
+			<div class="col izq">
+				<h2><strong>¿Necesitas <br> de un especialista?</strong></h2>
+				<p>Busca a un maestro cerca a ti</p>
+				<div class="selectores-padre">
+					<select id="Departamento" class="selectores">
+						<option disabled selected>Departamento</option>
+					    <option value="Lima">Lima</option>
+					    <option value="Amazonas">Amazonas</option>
+					    <option value="Cuzco">Cuzco</option>
+					    <option value="Cajamarca">Cajamarca</option>
+					</select>
+					<select id="Provincia" class="selectores">
+						<option disabled selected>Provincia</option>
+					    <option value="Lima">Barranca</option>
+					    <option value="Amazonas">Canta</option>
+					    <option value="Cuzco">Huaral</option>
+					    <option value="Cajamarca">Cajatambo</option>
+					</select>
+					<select id="Distrito" class="selectores">
+						<option disabled selected>Distrito</option>
+					    <option value="Lima">Barranca</option>
+					    <option value="Amazonas">Puerto Supe</option>
+					    <option value="Cuzco">Paramonga</option>
+					    <option value="Cajamarca">Pativilca</option>
+					</select>
+					<select id="oficio" class="selectores">
+						<option disabled selected>Oficio</option>
+					    <option value="Lima">Gasfitero</option>
+					    <option value="Amazonas">Pintor</option>
+					    <option value="Cuzco">Electrisista</option>
+					    <option value="Cajamarca">Albañil</option>
+					</select>
+				</div>
+				<a href="#" class="button-general">
+					<button>
+						Buscar al maestro <img src="img/icon-arrow-boton.svg" alt="">
+					</button>
+				</a>
+
+
+			</div>
+			<div class="com der"></div>
+		</div>
+	</section>
+	<section class="solicitados">
+		<div class="contenedor">
+			<h2>Lo más solicitados</h2>
+			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			      	<div class="swiper-slide">
+			      		<img src="img/icon-oficio-gasfitero.svg" alt="">
+			      		<p>Gasfitero</p>
+			      	</div>
+			      	<div class="swiper-slide">
+			      		<img src="img/icon-oficio-albañil.svg" alt="">
+			      		<p>Albañil</p>
+			      	</div>
+			      	<div class="swiper-slide">
+			      		<img src="img/icon-oficio-electrisista.svg" alt="">
+			      		<p>Electricista</p>
+			      	</div>
+			      	<div class="swiper-slide">
+			      		<img src="img/icon-oficio-gasfitero.svg" alt="">
+			      		<p>Gasfitero</p>
+			      	</div>
+			      	<div class="swiper-slide">
+			      		<img src="img/icon-oficio-casa.svg" alt="">
+			      		<p>Pintor</p>
+			      	</div>
+			      	<div class="swiper-slide">
+			      		<img src="img/icon-oficio-pintor.svg" alt="">
+			      		<p>Drywall</p>
+			      	</div>
+			      	<div class="swiper-slide">
+			      		<img src="img/icon-oficio-carpintero.svg" alt="">
+			      		<p>Carpintero</p>
+			      	</div>
+			      	<div class="swiper-slide">
+			      		<img src="img/icon-oficio-gasfitero.svg" alt="">
+			      		<p>Gasfitero</p>
+			      	</div>
+			      	<div class="swiper-slide">
+			      		<img src="img/icon-oficio-gasfitero.svg" alt="">
+			      		<p>Gasfitero</p>
+			      	</div>
+			      	<div class="swiper-slide">
+			      		<img src="img/icon-oficio-gasfitero.svg" alt="">
+			      		<p>Gasfitero</p>
+			      	</div>
+			    </div>
+			    <!-- Add Pagination -->
+			    <div class="swiper-pagination"></div>
+			    <!-- Add Arrows -->
+			    <div class="swiper-button-next"></div>
+			    <div class="swiper-button-prev"></div>
+			</div>
+  			<script src="js/swiper.min.js"></script>
+			<script>
+			    var swiper = new Swiper('.swiper-container', {
+			      slidesPerView: 6,
+			      spaceBetween: 30,
+			      slidesPerGroup: 6,
+			      loop: true,
+			      loopFillGroupWithBlank: true,
+			      pagination: {
+			        el: '.swiper-pagination',
+			        clickable: true,
+			      },
+			      navigation: {
+			        nextEl: '.swiper-button-next',
+			        prevEl: '.swiper-button-prev',
+			      },
+			    });
+			</script>
+		</div>
+	</section>
+	<section class="elige-maestro">
+		<div class="contenedor">
+			<h2>Elige a <strong>tu maestro</strong></h2>
+			<div class="item-maestro">
+				<div class="subitems-maestro">
+					<div class="subitem-number active">
+						<h2>1</h2>
+					</div>
+					<div class="subitem-text">
+						<h4>Elige el oficio</h4>
+						<p>Seleccione la provincia el oficio, distrito y zona</p>
+					</div>
+				</div>
+				<div class="subitems-maestro">
+					<div class="subitem-number">
+						<h2>2</h2>
+					</div>
+					<div class="subitem-text">
+						<h4>Elige el oficio</h4>
+						<p>Seleccione la provincia el oficio, distrito y zona</p>
+					</div>
+				</div>
+				<div class="subitems-maestro">
+					<div class="subitem-number">
+						<h2>3</h2>
+					</div>
+					<div class="subitem-text">
+						<h4>Elige el oficio</h4>
+						<p>Seleccione la provincia el oficio, distrito y zona</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="clientes">
+		<div class="contenedor">
+			<h2>Clientes <strong>satisfechos</strong></h2>
+			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			      	<div class="swiper-slide">
+			    		<div class="img-cliente">
+			    			<img src="https://via.placeholder.com/62x62" alt="">
+			    			<div class="info-trabajador">
+			    				<h5>Omar <br>Guzman Rodriguez</h5>
+			    				<div class="calificacion">
+			    					<img class="star-active" src="img/star-solid.svg" alt="">
+			    					<img class="star-active" src="img/star-solid.svg" alt="">
+			    					<img class="star-active" src="img/star-solid.svg" alt="">
+			    					<img class="star-active" src="img/star-solid.svg" alt="">
+			    					<img class="star-active" src="img/star-solid.svg" alt="">
+			    				</div>
+			    			</div>
+			    		</div>
+			    		<div class="descripcion-maestro">
+			    			<p>"Su trabajo me encanto a todas luces un profesional, estoy encantado con el servicio."</p>
+			    			<div class="hora-anunciada">Recibido hace 2 minutos</div>
+			    		</div>
+			      	</div>  
+			      	<div class="swiper-slide">
+			    		<div class="img-cliente">
+			    			<img src="https://via.placeholder.com/62x62" alt="">
+			    			<div class="info-trabajador">
+			    				<h5>Omar <br>Guzman Rodriguez</h5>
+			    				<div class="calificacion">
+			    					<img class="star-active" src="img/star-solid.svg" alt="">
+			    					<img class="star-active" src="img/star-solid.svg" alt="">
+			    					<img class="star-active" src="img/star-solid.svg" alt="">
+			    					<img class="star-active" src="img/star-solid.svg" alt="">
+			    					<img class="star-active" src="img/star-solid.svg" alt="">
+			    				</div>
+			    			</div>
+			    		</div>
+			    		<div class="descripcion-maestro">
+			    			<p>"Su trabajo me encanto a todas luces un profesional, estoy encantado con el servicio."</p>
+			    			<div class="hora-anunciada">Recibido hace 2 minutos</div>
+			    		</div>
+			      	</div>  
+			      	<div class="swiper-slide">
+			    		<div class="img-cliente">
+			    			<img src="https://via.placeholder.com/62x62" alt="">
+			    			<div class="info-trabajador">
+			    				<h5>Omar <br>Guzman Rodriguez</h5>
+			    				<div class="calificacion">
+			    					<img class="star-active" src="img/star-solid.svg" alt="">
+			    					<img class="star-active" src="img/star-solid.svg" alt="">
+			    					<img class="star-active" src="img/star-solid.svg" alt="">
+			    					<img class="star-active" src="img/star-solid.svg" alt="">
+			    					<img class="star-active" src="img/star-solid.svg" alt="">
+			    				</div>
+			    			</div>
+			    		</div>
+			    		<div class="descripcion-maestro">
+			    			<p>"Su trabajo me encanto a todas luces un profesional, estoy encantado con el servicio."</p>
+			    			<div class="hora-anunciada">Recibido hace 2 minutos</div>
+			    		</div>
+			      	</div>  
+			      	<div class="swiper-slide">
+			    		<div class="img-cliente">
+			    			<img src="https://via.placeholder.com/62x62" alt="">
+			    			<div class="info-trabajador">
+			    				<h5>Omar <br>Guzman Rodriguez</h5>
+			    				<div class="calificacion">
+			    					<img class="star-active" src="img/star-solid.svg" alt="">
+			    					<img class="star-active" src="img/star-solid.svg" alt="">
+			    					<img class="star-active" src="img/star-solid.svg" alt="">
+			    					<img class="star-active" src="img/star-solid.svg" alt="">
+			    					<img class="star-active" src="img/star-solid.svg" alt="">
+			    				</div>
+			    			</div>
+			    		</div>
+			    		<div class="descripcion-maestro">
+			    			<p>"Su trabajo me encanto a todas luces un profesional, estoy encantado con el servicio."</p>
+			    			<div class="hora-anunciada">Recibido hace 2 minutos</div>
+			    		</div>
+			      	</div>  
+			      	<div class="swiper-slide">
+			    		<div class="img-cliente">
+			    			<img src="https://via.placeholder.com/62x62" alt="">
+			    			<div class="info-trabajador">
+			    				<h5>Omar <br>Guzman Rodriguez</h5>
+			    				<div class="calificacion">
+			    					<img class="star-active" src="img/star-solid.svg" alt="">
+			    					<img class="star-active" src="img/star-solid.svg" alt="">
+			    					<img class="star-active" src="img/star-solid.svg" alt="">
+			    					<img class="star-active" src="img/star-solid.svg" alt="">
+			    					<img class="star-active" src="img/star-solid.svg" alt="">
+			    				</div>
+			    			</div>
+			    		</div>
+			    		<div class="descripcion-maestro">
+			    			<p>"Su trabajo me encanto a todas luces un profesional, estoy encantado con el servicio."</p>
+			    			<div class="hora-anunciada">Recibido hace 2 minutos</div>
+			    		</div>
+			      	</div>  
+			      	<div class="swiper-slide">
+			    		<div class="img-cliente">
+			    			<img src="https://via.placeholder.com/62x62" alt="">
+			    			<div class="info-trabajador">
+			    				<h5>Omar <br>Guzman Rodriguez</h5>
+			    				<div class="calificacion">
+			    					<img class="star-active" src="img/star-solid.svg" alt="">
+			    					<img class="star-active" src="img/star-solid.svg" alt="">
+			    					<img class="star-active" src="img/star-solid.svg" alt="">
+			    					<img class="star-active" src="img/star-solid.svg" alt="">
+			    					<img class="star-active" src="img/star-solid.svg" alt="">
+			    				</div>
+			    			</div>
+			    		</div>
+			    		<div class="descripcion-maestro">
+			    			<p>"Su trabajo me encanto a todas luces un profesional, estoy encantado con el servicio."</p>
+			    			<div class="hora-anunciada">Recibido hace 2 minutos</div>
+			    		</div>
+			      	</div>  
+
+			  
+			    </div>
+			    <!-- Add Pagination -->
+			    <div class="swiper-pagination"></div>
+			    <!-- Add Arrows -->
+			    <div class="swiper-button-next"></div>
+			    <div class="swiper-button-prev"></div>
+			    <script src="js/swiper.min.js"></script>
+				<script>
+				    var swiper = new Swiper('.swiper-container', {
+				      slidesPerView: 3,
+				      spaceBetween: 30,
+				      slidesPerGroup: 2,
+				      loop: true,
+				      loopFillGroupWithBlank: true,
+				      pagination: {
+				        el: '.swiper-pagination',
+				        clickable: true,
+				      },
+				      navigation: {
+				        nextEl: '.swiper-button-next',
+				        prevEl: '.swiper-button-prev',
+				      },
+				    });
+				</script>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="contenedor">
+			<div class="footer-nav">
+				<div class="div logo">
+				<img src="img/logo-moficio-footer.svg" alt="">
+				</div>
+				<div class="items-footer">
+					<h4>Sobre MOficios</h4>
+					<a href="">Sobre Nosotros</a>
+					<a href="">Prensa</a>
+					<a href="">Politica de proteccion de datos</a>
+					<a href="">App</a>
+				</div>
+				<div class="items-footer">
+					<h4>Ayuda al cliente</h4>
+					<a href="">Preguntas Frecuentes</a>
+					<a href="">Terminos y condiciones </a>
+					<a href="">Blog</a>
+				</div>
+				<div class="items-footer">
+					<h4>Usuario</h4>
+					<a href="">Maestro</a>
+					<a href="">Clientes</a>
+				</div>
+				<div class="items-footer">
+					<h4>Contacto</h4>
+					<a href="">Buzon de sugerencias</a>
+					<a href="">Ayuda en linea</a>
+				</div>
+			</div>
+			<div class="derechos-autor">
+				<div class="item-copy">© 2020 Todos los derechos reservados</div>
+				<div class="rrss">
+					<p>Siguenos</p>
+					<a href=""><img src="img/icon-facebook.svg" alt=""></a>
+					<a href=""><img src="img/icon-linkedin.svg" alt=""></a>
+					<a href=""><img src="img/icon-twitter.svg" alt=""></a>
+					<a href=""><img src="img/icon-instagram.svg" alt=""></a>
+					<a href=""><img src="img/icon-youtube.svg" alt=""></a>
+					<a href=""><img src="img/icon-whatsapp.svg" alt=""></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</body>
+<style>
+	    .swiper-container {
+	      width: 100%;
+	      height: 100%;
+	    }
+	    .swiper-slide {
+	      text-align: center;
+	      font-size: 18px;
+	      background: #fff;
+
+	      /* Center slide text vertically */
+	      display: -webkit-box;
+	      display: -ms-flexbox;
+	      display: -webkit-flex;
+	      display: flex;
+	      -webkit-box-pack: center;
+	      -ms-flex-pack: center;
+	      -webkit-justify-content: center;
+	      justify-content: center;
+	      -webkit-box-align: center;
+	      -ms-flex-align: center;
+	      -webkit-align-items: center;
+	      align-items: center;
+	    }
+</style>
+</html>
