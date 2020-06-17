@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/507b78cca7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header id="servidor-cv">
+		<div class="contenedor">
+			<a href="#">
+				<img src="img/logo_moficio.svg" alt="">
+			</a>
+			<div class="perfil-completo">
+				<div class="item-perfil">
+					<p>Tu</p>
+					<img src="img/icon/img-perfil.png" alt="">
+				</div>
+				<button class="bot-blue">Ofrece tu oficio</button>
+			</div>
+		</div>
+	</header>
+	<section class="cv-profile">
+		<div class="contenedor-cv">
+			<div class="col izq">
+				<div class="perfil-cv">
+					<img src="img/icon/img-perfil.png" alt="">
+					<div class="datos-perfil-cv">
+						<h2><strong>Omar </strong>Guzman Rodriguez</h2>
+						<div class="calificacion-stars">
+							<img src="img/icon/icon-star.svg" alt="">
+							<img src="img/icon/icon-star.svg" alt="">
+							<img src="img/icon/icon-star.svg" alt="">
+							<img src="img/icon/icon-star.svg" alt="">
+							<img src="img/icon/icon-star.svg" alt="">
+							<p class="calificacion"><strong>5.0</strong>Calificacion</p>
+						</div>
+					</div>
+				</div>
+				<div class="item-especialidades">
+					<h2><img src="img/icon/icon-seguridad.svg" alt="">Especialidades</h2>
+					<div class="especialidades-items">
+						<div class="subitem-especialidad">Pintor</div>
+						<div class="subitem-especialidad">Electricista</div>
+						<div class="subitem-especialidad">Albañil</div>
+						<div class="subitem-especialidad">Gasfitero</div>
+					</div>
+				</div>
+				<div class="item-datos-per">
+					<h2><img src="img/icon/icon-perfil.svg" alt="">Datos Personales</h2>
+					<div class="datos-per">
+						<div class="subdatos">
+							<h4>Direccion</h4>
+							<p>Av.Las begonias 2450 - Comas</p>
+						</div>
+						<div class="subdatos">
+							<h4>D.N.I</h4>
+							<p>77777777</p>
+						</div>
+						<div class="subdatos">
+							<h4>Correo</h4>
+							<p>example@example.com</p>
+						</div>
+						<div class="subdatos">
+							<h4>Telefono</h4>
+							<p>123456789</p>
+						</div>
+						<div class="subdatos">
+							<h4>Fecha de Nacimiento</h4>
+							<p>25 de marzo de 1999</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col der">
+				<div class="div-contacto">
+					<h3>Comunicate ahora</h3>
+					<button class="bot-blue">9999999999</button>
+				</div>
+				<div class="item-cualidades">
+					<h2><img src="img/icon/icon-medalla.svg" alt="">Cualidades</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem sint voluptatum laboriosam esse hic obcaecati, numquam animi facere pariatur, magnam labore omnis sapiente odio sunt aut qui nisi possimus error.</p>
+				</div>
+				<div class="item-otros">
+					<h2><img src="img/icon/icon-escudo.svg" alt="">Otro</h2>
+					<div class="descargas">
+						<a href="">
+							<img src="img/icon/icon-descarga.svg" alt="">
+							Antecedentes penales
+						</a>
+						<a href="">
+							<img src="img/icon/icon-descarga.svg" alt="">
+							Antecedentes penales
+						</a>
+						<a href="">
+							<img src="img/icon/icon-lupa.svg" alt="">
+							Antecedentes penales
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="img-trabajos">
+				<h2><img src="img/icon/icon-caja.svg" alt="">Trabajos realizados</h2>
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="img/icon/trabajo1.png" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/icon/trabajo2.png" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/icon/trabajo3.png" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/icon/trabajo2.png" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/icon/trabajo3.png" alt="">
+						</div>
+					</div>
+					<!-- Add Pagination -->
+					<div class="swiper-pagination"></div>
+					<!-- Add Arrows -->
+				</div>
+				<script src="js/swiper.min.js"></script>
+				<script>
+					var swiper = new Swiper('.swiper-container', {
+						slidesPerView: 4,
+						spaceBetween: 30,
+						slidesPerGroup: 2,
+						loop: true,
+						loopFillGroupWithBlank: true,
+						pagination: {
+							el: '.swiper-pagination',
+							clickable: true,
+						},
+						navigation: {
+							nextEl: '.swiper-button-next',
+							prevEl: '.swiper-button-prev',
+						},
+					});
+				</script>
+			</div>
+			<div class="opiniones">
+				<h2><img src="img/icon/icon-caja.svg" alt="">Opiniones</h2>
+				<div class="item-cliente">
+					<div class="comentarista">
+						<img src="https://via.placeholder.com/45x45" alt="">
+						<div class="datos-perfil-cv">
+							<h2><strong>Omar</strong>Guzman Rodriguez</h2>
+							<div class="calificacion-stars">
+								<img src="img/icon/icon-star.svg" alt="">
+								<img src="img/icon/icon-star.svg" alt="">
+								<img src="img/icon/icon-star.svg" alt="">
+								<img src="img/icon/icon-star.svg" alt="">
+								<img src="img/icon/icon-star.svg" alt="">
+								<p class="fecha-publicada">4 de junio 2020</p>
+							</div>
+						</div>
+					</div>
+					<div class="comentario-cliente">
+						<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit.</p>
+					</div>
+				</div>
+				<div class="item-cliente">
+					<div class="comentarista">
+						<img src="https://via.placeholder.com/45x45" alt="">
+						<div class="datos-perfil-cv">
+							<h2><strong>Omar</strong>Guzman Rodriguez</h2>
+							<div class="calificacion-stars">
+								<img src="img/icon/icon-star.svg" alt="">
+								<img src="img/icon/icon-star.svg" alt="">
+								<img src="img/icon/icon-star.svg" alt="">
+								<img src="img/icon/icon-star.svg" alt="">
+								<img src="img/icon/icon-star.svg" alt="">
+								<p class="fecha-publicada">4 de junio 2020</p>
+							</div>
+						</div>
+					</div>
+					<div class="comentario-cliente">
+						<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="add-comentario">
+		<div class="back-white">
+			<div class="col izq">
+				<h2><img src="img/icon/icon-comentario.svg" alt="">Especialidades</h2>
+				<p>Las reseñas son públicas y se pueden editar. El desarrollador y los usuarios pueden ver los cambios anteriores a menos que elimines la reseña por completo.</p>
+			</div>
+			<div class="col der">
+				<h2><img src="img/icon/icon-medalla2.svg" alt="">Especialidades</h2>
+				<div class="calificacion-stars">
+					<img src="img/icon/icon-star.svg" alt="">
+					<img src="img/icon/icon-star.svg" alt="">
+					<img src="img/icon/icon-star.svg" alt="">
+					<img src="img/icon/icon-star.svg" alt="">
+					<img src="img/icon/icon-star.svg" alt="">
+					<p class="text-publicada">Me ah encantado</p>
+				</div>
+
+			</div>
+			<textarea placeholder="Cuenta a los demás qué opinas de mi trabajo. ¿La recomendarías? ¿Por qué?" name="" id="" cols="30" rows="10"></textarea>
+			<div class="buttons">
+				<a href=""><button class="bot-white">Cancelar</button></a>
+				<a href=""><button class="bot-blue">Enviar</button></a>
+			</div>
+		</div>
+
+	</section>
+	<footer>
+		<div class="contenedor">
+			<div class="footer-nav">
+				<div class="div logo">
+					<img src="img/logo-moficio-footer.svg" alt="">
+				</div>
+				<div class="items-footer">
+					<h4>Sobre MOficios</h4>
+					<a href="">Sobre Nosotros</a>
+					<a href="">Prensa</a>
+					<a href="">Politica de proteccion de datos</a>
+					<a href="">App</a>
+				</div>
+				<div class="items-footer">
+					<h4>Ayuda al cliente</h4>
+					<a href="">Preguntas Frecuentes</a>
+					<a href="">Terminos y condiciones </a>
+					<a href="">Blog</a>
+				</div>
+				<div class="items-footer">
+					<h4>Usuario</h4>
+					<a href="">Maestro</a>
+					<a href="">Clientes</a>
+				</div>
+				<div class="items-footer">
+					<h4>Contacto</h4>
+					<a href="">Buzon de sugerencias</a>
+					<a href="">Ayuda en linea</a>
+				</div>
+			</div>
+			<div class="derechos-autor">
+				<div class="item-copy">© 2020 Todos los derechos reservados</div>
+				<div class="rrss">
+					<p>Siguenos</p>
+					<a href=""><img src="img/icon-facebook.svg" alt=""></a>
+					<a href=""><img src="img/icon-linkedin.svg" alt=""></a>
+					<a href=""><img src="img/icon-twitter.svg" alt=""></a>
+					<a href=""><img src="img/icon-instagram.svg" alt=""></a>
+					<a href=""><img src="img/icon-youtube.svg" alt=""></a>
+					<a href=""><img src="img/icon-whatsapp.svg" alt=""></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<style>
+		.swiper-container {
+			width: 100%;
+			height: 100%;
+		}
+		.swiper-slide {
+			text-align: center;
+			font-size: 18px;
+			background: #fff;
+
+			/* Center slide text vertically */
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			-webkit-justify-content: center;
+			justify-content: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			-webkit-align-items: center;
+			align-items: center;
+		}
+	</style>
+</body>
+</html>
