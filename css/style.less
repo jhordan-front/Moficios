@@ -166,6 +166,7 @@ section.solicitados{
 				background-color: @color-boton;
 				display: flex;
 				flex-direction: column;
+				max-width: 164px;
 				img{
 					margin-bottom: 22px;
 					text-align: center;
@@ -240,7 +241,7 @@ section.elige-maestro{
 						font-weight: 500;
 					}
 				}
-				.subitem-number{
+				.subitem-number,.subitem-number-none{
 					width: 50px; 
 					height: 50px;
 					border-radius: 50%;
@@ -249,18 +250,40 @@ section.elige-maestro{
 					align-items: center;
 					margin-bottom: 50px;
 					border: 1px solid #CFD5DB;
+					position: relative;
 					color: #CFD5DB;
+					background: white;
 					h2{
 						font-family: 'Roboto', sans-serif;
 						font-weight: 700;
 						margin: 0;
 					}
 				}
-				.subitem-number.active{
+				.subitem-number:before {
+				    content: '';
+				    width: 530px;
+				    position: absolute;
+				    background: #CFD5DB;
+				    height: 2px;
+				    right: 0;
+				    z-index: -10;
+				    bottom: 40%;
+				}
+				.subitem-number.active,.subitem-number-none.active{
 					background-color: @color-boton;
 					color: white;
 
 				}
+				.subitem-number.active:before {
+				    content: '';
+				    width: 486px;
+				    position: absolute;
+				    background: @color-boton;
+				    height: 2px;
+				    right: 0;
+				    z-index: -10;
+				    bottom: 40%;
+				}		
 			}
 		}
 	}
@@ -404,6 +427,40 @@ footer{
 			    	margin-left: 21px;
 			    }
 			}
+		}
+	}
+}
+header#logueado{
+	position: fixed;
+	top: 0;
+	.contenedor{
+		.logueado {
+		    display: flex;
+		    align-items: center;
+		    color: #8291A0;
+		    select{
+		    	width: auto;
+		    	margin-right: 18px;
+		    	height: 23px;
+		    	border: unset;
+		    	color: #8291A0;
+		    	font-size: 14px;
+		    }
+		    .profile-active{
+		    	display: flex;
+		    	align-items: center;
+		    	padding: 4px;
+		    	border: 1px solid #8291A0;
+		    	height: 45px;
+		    	width: 86px;
+		    	justify-content: space-between;
+		    	border-radius: 25px;
+		    	padding-left: 14px;
+		    	font-size: 16px;
+		    	img{
+		    		border-radius: 50%;
+		    	}
+		    }
 		}
 	}
 }
